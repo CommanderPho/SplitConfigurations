@@ -60,7 +60,11 @@ class MainWindowController: NSWindowController, NSToolbarDelegate {
             lastSplitView.animator().isCollapsed = true
         }
     }
-    
+
+
+	////////////////////////////////////////////////////////////////////
+	//MARK: -
+	//MARK: - Toolbar Items
     func toolbarDefaultItemIdentifiers(_ toolbar: NSToolbar) -> [NSToolbarItem.Identifier] {
         return  [
             .toggleFirstSidebarItem,
@@ -131,8 +135,7 @@ class MainWindowController: NSWindowController, NSToolbarDelegate {
         }
     }
     
-    func customToolbarItem(
-        itemForItemIdentifier itemIdentifier: String,
+    func customToolbarItem(itemForItemIdentifier itemIdentifier: String,
         label: String,
         paletteLabel: String,
         toolTip: String,
